@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.story-image{
+    height: 25rem;
+    border: 1px solid black;
+    background-image: url("/images/story.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.story-content{
+    padding: 4rem;
+}
+
+.story-head{
+    position: absolute;
+    padding: 1rem 2rem;
+    top: 23rem;
+    left: 45%;
+    color: #FF8C00;
+    background-color: white;
+    box-shadow: 0PX 0PX 20px rgba(0, 0, 0, 0.234);
+    border-radius: 6px;
+}

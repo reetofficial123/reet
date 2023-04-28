@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <form action="../reet/php/registration.php" method="post">
+            <div class="main-form update-form" id="reg-form">
+                <div class="form-head">
+                    <p class="form-heading update-head">Update Profile!</p>
+                </div>
+                <div class="profile-div">
+                    <div class="profile"><i class="fa-solid fa-user"></i></div>
+                    <p class="profile-text">Change Photo</p>
+                </div>
+                
+                <div class="input-group" id="reg-input">
+                    <label class="custom-field one" id="names">
+                        <input type="text" placeholder=" " id="name" name="name" />
+                        <span class="placeholder">Enter Full Name</span>
+                    </label>
+                    <label class="custom-field one" id="email">
+                        <input type="text" name="email" placeholder=" " />
+                        <span class="placeholder">Enter Email Address</span>
+                    </label>
+                   
+                    
+                    <div class="phone-lr">
+                        <span class="country">+91</span>
+                        <label class="custom-field one" id="phone">
+                            <input type="text" placeholder=" " name="number" maxlength="10" value="" />
+                            
+                            <span class="placeholder">
+                                Enter Phone Number</span>
+                        </label>
+                    </div>
+                    <div class="lr">
+                        <select class="gender custom-field" name="gender" id="gender">
+                            <option>Select Gender</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="o">Other</option>
+                        </select>
+                        <label class="custom-field one dob" id="dob">
+                            <input name="dob" type="date">
+                        </label>
+                    </div>
+                    
+                    
+
+
+                    <button class="register" name="submit">Update Profile</button>
+                    <button class="register del-profile" name="submit">Delete Profile</button>
+                    <!-- <div class="extras">
+                        <p>or</p>
+                        <div class="logos"></div>
+                    </div> -->
+                </div>
+            </div>
+        </form>
+        </div>
+        
+</body>
+</html>

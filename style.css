@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#form-container{
+    display: inline-block;
+    margin: auto;
+    box-shadow: 0px 0px 20px rgb(214, 214, 214);
+}
+.main-form{
+    padding: 3rem;
+}
+.form-control{
+    display: flex;
+}
+
+.form-control button{
+    width: 49.5%;
+    padding: 20px;
+    flex: 1;
+}
+
+.form-heading{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FF8C00;
+}
+
+.form-description{
+    color: #7A7A7A;
+}
+
+.input-group{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.gender{
+    padding: 12px;
+    background-color: white;
+}
+  
+  .custom-field {
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 5px;
+    --field-padding: 12px;
+  }
+  
+  .custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: var(--field-padding);
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .custom-field .placeholder {
+    position: absolute;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 2));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 22px;
+    line-height: 100%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 
+    top 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+  }
+
+  
+  /* ONE */
+  .custom-field.one input {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .custom-field.one input + .placeholder {
+    left: 8px;
+    padding: 0 5px;
+  }
+  
+  .custom-field.one input.dirty,
+  .custom-field.one input:not(:placeholder-shown),
+  .custom-field.one input:focus {
+    border-color: #FF8C00;
+    transition-delay: 0.1s;
+  }
+  
+  .custom-field.one input.dirty + .placeholder,
+  .custom-field.one input:not(:placeholder-shown) + .placeholder,
+  .custom-field.one input:focus + .placeholder {
+    top: 0;
+    font-size: 10px;
+    color: #FF8C00;
+    background: white;
+    width: auto;
+  }
+  
+.custom-field .one input, select{
+    background-color: #F3F3F3;
+    color: #aaa;
+    border: 1px solid #d3d3d3;
+    margin: 2px;
+}
+
+select{
+    outline: none;
+}
+
+.dob input{
+  color: #b1aab1;
+}
+.otp-submit{
+  background-color: #FF8C00;
+  padding: 16px 54px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.otp-submit:hover{
+  background-color: #dd7a02;
+  transition: 0.5s;
+}
+
+.otp-box input{
+  padding: 16px 32px;
+}
+
+.register{
+  background-color: #FF8C00;
+  border: none;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#names input, #email input, #phone input, #pass1 input, #pass2 input{
+  width: 100%;
+}
+
+.lr{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-group{
+  margin-top: 20px;
+}
+
+#dob input, #gender{
+  width: 152px;
+}
+
+#dob input{
+  border-color: #dddddd;
+}
+
+#otp input{
+  width: 129px;
+}
+
+.main-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control button{
+  border: 0;
+  cursor: pointer;
+}
+
+.reg{
+  background-color: white;
+}
+.log{
+  background-color: #b6b6b6;
+}
+
+.login-form{
+  position: absolute;
+    background-color: white;
+    top: 3.5rem;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+
+#msg input{
+  height: 7rem;
+}
+
+.input-group{
+  width: 100%;
+}
+
+.register:hover{
+  cursor: pointer;
+  background-color: #dd7a02;
+}
+
+.main-form{
+  align-items: flex-start;
+}
+
+
+.phone-lr{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#phone{
+  width: 100%;
+}
+
+.country{
+  background-color: #b6b6b6;
+  padding: 12px;
+  margin-top: -6px;
+  color: white;
+  margin-right: 2px;
+}
+
+.otp-lr > span{
+  background-color: #b6b6b6;
+}
+
+#otp{
+  width: 100%;
+}
+
+.del-profile{
+  background-color: #ff0000a3;
+  margin-top: 5px;
+}
+
+.update-form{
+  align-items: center;
+}
+
+.profile-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.profile{
+  padding: 1rem;
+  color: white;
+  background-color: #FF8C00;
+  border-radius: 100%;
+}
+.profile-text:hover{
+  color: #FF8C00;
+}
+.profile-text{
+  transition: 0.5s;
+}
